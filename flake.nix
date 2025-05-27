@@ -33,7 +33,7 @@
         ]);
     in {
       default = pkgs.mkShell {
-        packages = [python];
+        packages = [python pkgs.docker-compose];
       };
     });
   };
